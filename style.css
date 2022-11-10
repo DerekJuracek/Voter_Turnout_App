@@ -2,13 +2,24 @@ body {
   margin: 0;
   padding: 0;
 }
+
+p {
+  font-weight: bold;
+}
 #map {
   position: absolute;
   top: 0;
   bottom: 0;
-
   width: 100%;
 }
+
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px "Open Sans", sans-serif;
+  background-color: #fff;
+  border-radius: 3px;
+  }
+
 #menu {
   position: fixed;
   bottom: 1em;
@@ -18,9 +29,6 @@ body {
   padding: 10px;
   font-family: "Open Sans", sans-serif;
 }
-
-
-
 
 .legend {
   background-color: #fff;
@@ -35,7 +43,7 @@ body {
 }
 
 .legend2 {
-  background-color: grey;
+  background-color: #fff;
   border-radius: 3px;
   bottom: 30px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -45,7 +53,6 @@ body {
   right: 10px;
   z-index: 1;
 }
-
 
 .legend h4 {
   margin: 0 0 10px;
@@ -59,10 +66,20 @@ body {
   width: 10px;
 }
 
+.legend2 div span {
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  margin-right: 5px;
+  width: 10px;
+}
 /* #poverty-legend {
-  display: none;
+  display: "none";
 } */
 
+.legend2 {
+  display: none;
+}
 
 .dot {
   height: 10px;
@@ -79,4 +96,15 @@ input[type="radio"]#cla1p8oxf000f14o4armz7occ {
   accent-color: purple;
 }
 
+#features {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.8);
+  }
 
+
+ 
