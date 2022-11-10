@@ -42,36 +42,39 @@
   </head>
   <body>
     <div id="map"></div>
+
     <div id="mapboxgl-popup"></div>
+    <!-- <pre id="features"></pre> -->
     <div id="menu">
       <label for="income">Median Income</label>
       <input
-       
-        id="cla5wix8s000214l3pe8h6vya"  
+        id="cla5wix8s000214l3pe8h6vya"
         type="radio"
         name="rtoggle"
-        value="income"
-        checked="checked"
+        value="satellite"
       />
       <label for="poverty">Poverty Status</label>
       <input
-       
-        id="cla1p8oxf000f14o4armz7occ"  
+        id="cla1p8oxf000f14o4armz7occ"
         type="radio"
         name="rtoggle"
-        value="poverty"
+        value="streets"
       />
     </div>
     <div id="state-legend" class="legend">
       <h4>Median Income</h4>
-      <div id ="1"><span id ="sp1" style="background-color: #f835bd"></span>Income < $50,000</div>
-      <div id ="2"><span id ="sp1" style="background-color: #1af4f1"></span>Income > $50,000</div>
+      <div><span style="background-color: #f835bd"></span>Income < $50,000</div>
+      <div><span style="background-color: #1af4f1"></span>Income > $50,000</div>
     </div>
-    <!-- <div id="poverty-legend" class="legend">
-      <h4>Poverty Status</h4>
-      <div><span style="background-color: green"></span>Below Poverty Line < $50,000</div>
-      <div><span style="background-color: greenyellow"></span>Above Poverty Line > $50,000</div>
-    </div> -->
+    <div id="poverty-legend" class="legend2">
+      <h4>Below Poverty Level</h4>
+      <div>
+        <span style="background-color: #f835bd"></span>Living Under Poverty
+      </div>
+      <div>
+        <span style="background-color: #1af4f1"></span>Living Over Poverty
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
